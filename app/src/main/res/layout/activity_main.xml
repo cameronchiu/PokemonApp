@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Normal"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:text="Psychic"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox17"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Rock"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox18"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Steel"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox19"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Water"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hard"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="72dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Pokemon"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opponent"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Dragon"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Fairy"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Electric"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="68dp"
+        android:layout_height="24dp"
+        android:text="Fighting"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Dark"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Fire"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Flying"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Grass"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Ground"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="62dp"
+        android:layout_height="24dp"
+        android:text="Ice"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Ghost"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Poison"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox16"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Bug"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="520dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="686dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
