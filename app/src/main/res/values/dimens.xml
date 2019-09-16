@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="editTextWidth">60dp</dimen>
-    <dimen name="editTextHeight">24dp</dimen>
+    <dimen name="CheckBoxWidth">60dp</dimen>
+    <dimen name="CheckBoxHeight">24dp</dimen>
+    <dimen name="PokemonWidth">130dp</dimen>
+    <dimen name="PokemonHeight">85dp</dimen>
+    <dimen name="RadioButtonHeight">.5dp</dimen>
+    <dimen name="RadioButtonWidth">150dp</dimen>
+    <dimen name="CheckBoxTextSize">8.5sp</dimen>
 </resources>
