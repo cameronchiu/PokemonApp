@@ -13,6 +13,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="112dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSpecs"
         app:layout_constraintEnd_toStartOf="@+id/textViewSpecs"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -67,22 +69,22 @@
         android:layout_width="140dp"
         android:layout_height="103dp"
         android:layout_marginTop="48dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="51dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
         tools:srcCompat="@drawable/abra" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="86dp"
+        android:layout_marginBottom="6dp"
         android:text="-------Choose Your Pokemon-------"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout" />
 
     <TextView
         android:id="@+id/textViewOpponentName"
@@ -111,28 +113,30 @@
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="69dp"
-        android:layout_marginBottom="73dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="27dp"
         android:background="@drawable/pokeball"
         android:onClick="displayYourPokemon"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintStart_toStartOf="@+id/spinner"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="249dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginBottom="254dp"
+        android:layout_marginBottom="248dp"
         android:onClick="populateSpinner"
         android:text="Filter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/spinner"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewSpecs" />
 
     <Switch
         android:id="@+id/switch1"
@@ -147,11 +151,11 @@
 
     <TextView
         android:id="@+id/textViewSpecs"
-        android:layout_width="96dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="73dp"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="22dp"
-        android:layout_marginBottom="69dp"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewOpponent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
@@ -161,7 +165,7 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="26dp"
         android:layout_marginBottom="7dp"
         android:text="FIGHT"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -171,12 +175,12 @@
         android:id="@+id/gridLayout"
         android:layout_width="389dp"
         android:layout_height="82dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        android:layout_marginTop="233dp"
+        android:layout_marginBottom="233dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintStart_toStartOf="@+id/spinner"
-        app:layout_constraintTop_toTopOf="@+id/textView2">
+        app:layout_constraintTop_toTopOf="parent">
 
         <CheckBox
             android:id="@+id/checkBoxIce"

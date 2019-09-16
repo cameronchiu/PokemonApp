@@ -208,6 +208,63 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    int opponentHealth = 100;
+    int playerHealth = 100;
+
+    public void fight (View v) {
+        int attackDamage = 0;
+        int defenseDamage = 0;
+        Spinner spinner = findViewById(R.id.spinner);
+        String selection = spinner.getSelectedItem().toString();
+        for (int i = 0; i < p1.getPokedex().size(); i++) {
+            if (p1.getPokedex().get(i).getName().equals(selection)) {
+                Pokemon playerPokemon = p1.getPokedex().get(i);
+            }
+        }
+        RadioButton easy = (RadioButton) findViewById(R.id.radioButtonEasy);
+        RadioButton medium = (RadioButton) findViewById(R.id.radioButtonMedium);
+        RadioButton hard = (RadioButton) findViewById(R.id.radioButtonHard);
+        int num = 0;
+        if (easy.isChecked() || medium.isChecked() || hard.isChecked()) {
+            if (easy.isChecked()) {
+                num = randEasy;
+            }
+            if (medium.isChecked()) {
+                num = randMedium;
+            }
+            if (hard.isChecked()) {
+                num = randHard;
+            }
+        } else
+            num = randEasy;
+        Pokemon opponentPokemon = p1.getPokedex().get(num);
+
+    }
+
+    public int checkEffectiveness(Pokemon opponent, Pokemon player){
+        ArrayList<String> opponentTypes = new ArrayList<String>();
+        ArrayList<String> playerTypes = new ArrayList<String>();
+        opponentTypes = opponent.getTypes();
+        playerTypes = player.getTypes();
+        //for loop needed
+        for(int i = 0; i<opponentTypes.size(); i++){
+            for(int j = 0; j<playerTypes.size();j++){
+                if(opponentTypes.get(i).equals("normal")){ //should take in account for both types being super effective against both
+                    if(playerTypes.get(i).equals("rock")){
+                        return 1;
+                    }
+                    if(playerTypes.get(i).equals("fire")){
+                        return 1;
+                    }
+                    if(playerTypes.get(i).equals("water")){
+                        return 1;
+                    }
+                }
+            }
+        }
+
+        return 0;
+    }
 
 
 
