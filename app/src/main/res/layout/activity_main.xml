@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="126dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:progress="100"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="0dp"
@@ -167,9 +179,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginBottom="7dp"
+        android:onClick="fight"
         android:text="FIGHT"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageButton" />
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
@@ -345,6 +359,34 @@
             app:layout_row="0" />
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="126dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginBottom="319dp"
+        android:progress="100"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWinLose"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FF0000"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/gridLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
